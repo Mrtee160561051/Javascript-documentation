@@ -1,0 +1,47 @@
+
+*,*::before,*::after{box-sizing:border-box;margin:0;}
+body{background-color:white;
+width:100%;
+line-height:1.5;
+font-size:clamp(12px,16px,18px);
+color:rgb(113, 108, 108);
+font-family:sans-serif;
+}
+main{max-width:90%;margin:auto;}
+section[id="Reference"]{padding-bottom:40px;}
+p.code{background-color:whitesmoke;font-size:clamp(1vh,12px,2vh);max-width:96%;margin:auto; padding:20px;}
+p{padding:12px 0;}
+header{font-size:clamp(15px,30px, 50px);
+padding:12px 0;
+color:black;}
+nav header{text-align:center; white-space:nowrap;}
+nav ul{border:0.5px solid black;
+max-height:clamp(50vh,278.7px,100vh);
+overflow-y:scroll;
+padding:0;}
+nav li {list-style-type:none;}
+nav a{text-decoration:none;color:inherit;
+display:block;
+border-top:0.5px solid black;
+padding:16px 30px}
+div.stick{content:"";
+  height:3px;
+  position:sticky;
+  bottom:-1;
+  background-color:black;}
+.intro-link:first-of-type{border-top:2px solid black;}
+@media screen and (min-width:768px){
+body{display:flex;}
+nav ul{border:none;}
+main{max-height:100vh;padding:20px 0 30px 290px;}
+.navbar{
+border-right:5px solid grey;
+max-width:34%;
+position:fixed;
+min-height:100%;}
+nav section{height:100vh}
+nav ul{max-height:87.3%;}
+
+div.stick{display:none;}
+.intro-link:first-of-type{border-top:1px solid black;}
+}
